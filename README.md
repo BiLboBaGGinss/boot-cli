@@ -14,7 +14,7 @@ Springboot后端脚手架
 
 - Spring Boot 2.3.x
 - Spring Framework 5.2.x
-- Apache Shiro 1.7
+- Spring Security
 
 **3、持久层**
 
