@@ -1,6 +1,7 @@
 package com.pan.bootcli.config;
 
 import com.pan.bootcli.config.security.AuthenticationEntryPointImpl;
+import com.pan.bootcli.config.security.filter.AjaxCorsFilter;
 import com.pan.bootcli.config.security.filter.JwtAuthenticationTokenFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -27,21 +28,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Autowired
     private UserDetailsService userDetailsService;
+
     /**
      * 认证失败处理类
      */
     @Autowired
     private AuthenticationEntryPointImpl unauthorizedHandler;
+
     /**
      * token认证过滤器
      */
     @Autowired
     private JwtAuthenticationTokenFilter authenticationTokenFilter;
+
     /**
      * 跨域过滤器
      */
     @Autowired
-    private CorsFilter corsFilter;
+    private AjaxCorsFilter corsFilter;
 
     /**
      * anyRequest          |   匹配所有请求路径
