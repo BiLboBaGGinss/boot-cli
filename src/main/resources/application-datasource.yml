@@ -54,6 +54,5 @@ spring:
           url: jdbc:mysql://localhost:3306/bootcli?characterEncoding=utf8&useSSL=false
       primary: master #设置默认的数据源或者数据源组,默认值即为master
       strict: false #设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候会抛出异常,不启动则使用默认数据源.
-
 # 生成 publickey 和密码，推荐使用本项目自带的加密方法。
 # java -cp druid-1.1.10.jar com.alibaba.druid.filter.config.ConfigTools youpassword

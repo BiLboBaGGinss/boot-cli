@@ -1,10 +1,21 @@
+# 项目配置
+bootcli:
+  # 名称
+  name: boot-cli
+  # 版本
+  version: 1.1.0
+  # 版权年份
+  copyrightYear:
+  # 获取ip地址开关
+  addressEnabled: false
+
 spring:
   application:
     # 应用名称
     name: boot-cli
   profiles:
     #数据库配置文件
-    active: datasource
+    include: datasource,redis
   thymeleaf:
     # 开启模板缓存（默认值： true ）
     cache: false
