@@ -1,6 +1,6 @@
 # Boot-Cli
 
-Springboot后端脚手架
+Springboot脚手架
 
 ## 代码借鉴
 
